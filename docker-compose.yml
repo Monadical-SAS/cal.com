@@ -54,8 +54,8 @@ services:
         DATABASE_DIRECT_URL: ${DATABASE_URL}
         CSP_POLICY: ${CSP_POLICY}
     restart: always
-    networks:
-      - stack
+    #networks:
+    #  - stack
     ports:
       - 3000:3000
     env_file: .env
@@ -74,8 +74,8 @@ services:
         DATABASE_URL: ${DATABASE_URL}
         DATABASE_DIRECT_URL: ${DATABASE_URL}
     restart: always
-    networks:
-      - stack
+    #networks:
+    #  - stack
     ports:
       - "${API_PORT:-80}:${API_PORT:-80}"
     env_file: .env
