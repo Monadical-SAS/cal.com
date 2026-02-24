@@ -35,7 +35,7 @@ services:
   #    - "${REDIS_PORT:-6379}:6379"
 
   calcom:
-    image: calcom.docker.scarf.sh/calcom/cal.com::v6.1.16
+    image: calcom.docker.scarf.sh/calcom/cal.com:v6.1.16
     build:
       context: .
       dockerfile: Dockerfile
